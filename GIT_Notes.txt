@@ -1,0 +1,31 @@
+Git Intro
+
+Install git via https://git-scm.com/download/win
+
+Install Git GUI App
+
+Create a repository folder for Git
+
+Move to that dir using Git bash console app
+
+run "git init"
+
+all the required files and folder will be created but is hidden use "ls -a" to see all including hidden files
+
+once thats done you will see "(master)" tag on your repository folder in the bash console
+
+if "./git" hidden folder is present and "master" is present your setup is okay to proceed.
+
+"git status" : to show the status of the files in the working directory.
+
+"git add file_name" to add the file to tracked by Git
+
+(use "git rm --cached <file>..." to unstage)
+
+$ git commit -m "Add README.md"   
+
+Make sure the message starts with a Verb like Add Update Delete
+
+
+$ git log
+use the above command to see the log history of commits 
