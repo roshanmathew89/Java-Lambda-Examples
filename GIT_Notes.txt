@@ -39,4 +39,5 @@ $ git add *.html  //to add any html files
 
 Add all files in the directlory including hidden files
 
-$
+$ git add -A
+
