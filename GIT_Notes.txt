@@ -45,3 +45,6 @@ Remove a file from staging area
 
 $ git reset HEAD file.txt 
 
+Ignore folder and file
+
+$ touch .gitignore //add the files and folder to this file 
