@@ -41,3 +41,6 @@ Add all files in the directlory including hidden files
 
 $ git add -A
 
+Remove a file from staging area
+
+$ git reset HEAD file.txt 
