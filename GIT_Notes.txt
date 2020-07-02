@@ -44,3 +44,4 @@ $ git add -A
 Remove a file from staging area
 
 $ git reset HEAD file.txt 
+
