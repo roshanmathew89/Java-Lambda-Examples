@@ -18,7 +18,7 @@ if "./git" hidden folder is present and "master" is present your setup is okay t
 
 "git status" : to show the status of the files in the working directory.
 
-"git add file_name" to add the file to tracked by Git
+"git add file_name" to add the file to tracked by Git , all changes done so will be sort considered in staging area
 
 (use "git rm --cached <file>..." to unstage)
 
@@ -29,3 +29,14 @@ Make sure the message starts with a Verb like Add Update Delete
 
 $ git log
 use the above command to see the log history of commits 
+
+if everything is clean log "git status" should show all is "clean" message
+
+
+Add multiple files of the same type
+
+$ git add *.html  //to add any html files
+
+Add all files in the directlory including hidden files
+
+$
