@@ -65,6 +65,8 @@ $ git branch
 Adding a new Branch
 
 $ git checkout -b <branch_name>
+
+$ git checkout -b feature1
 // this command move the bash into the newly created branch "feature1" , and if we execute "$ git branch" , we should see a "*" to the left of feature1
 //  indicating that it is the current branch we are working on
 
@@ -73,4 +75,29 @@ changing between branches
 
 $ git checkout <branch_name>
 
-// $  git checkout master , to move to the "master" branch
+// $  git checkout feature1 , to move to the "master" branch
+
+// $  git checkout master   , to move to the "master" branch
+
+Merge between branches 
+
+We can merge a branch into the current branch 
+
+$ git checkout <branch_name_changes_to_be_merged_into_from_a_different_branch>
+
+$ git merge <branch_name_you_want_to_merge_into_the_current_branch>
+
+//
+$ git checkout master // if you are not in master branch
+$ git merge feature1 // this will merge feature1 branch into the Master branch, note that feature1 will not be aware of the changes in master
+
+Removing a branch 
+
+$ git branch -d <branch_name>
+
+
+checking out commits
+
+
+
+
