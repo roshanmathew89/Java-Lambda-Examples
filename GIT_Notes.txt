@@ -8,7 +8,7 @@ Create a repository folder for Git
 
 Move to that dir using Git bash console app
 
-run "git init"
+$ git init
 
 all the required files and folder will be created but is hidden use "ls -a" to see all including hidden files
 
@@ -16,9 +16,9 @@ once thats done you will see "(master)" tag on your repository folder in the bas
 
 if "./git" hidden folder is present and "master" is present your setup is okay to proceed.
 
-"git status" : to show the status of the files in the working directory.
+$ git status // to show the status of the files in the working directory.
 
-"git add file_name" to add the file to tracked by Git , all changes done so will be sort considered in staging area
+$ git add <file_name>  //to add the file to tracked by Git , all changes done so will be sort considered in staging area
 
 (use "git rm --cached <file>..." to unstage)
 
@@ -45,8 +45,32 @@ Remove a file from staging area
 
 $ git reset HEAD file.txt 
 
+// sometimes when you have already add the subfolder-file or a subfolder to the staging area but later want git to ignore it before commit
+// we can add the same folder or file to the top level .gitignore file but for any files in the subfolder we may need to remove it from the staging area
+// or else "git status" will still show the subfolder or subfolder/file  and will be committed.
+// for top level files thats not a problem unless we want to place .gitignore file in each subfolder which is not a idle solution.
+
+
 Ignore folder and file
 
-$ touch .gitignore //add the files and folder to this file 
+$ touch .gitignore //add the files and folder to this file .gitignore  
 
-All folders and files added to this is ignored
+All folders and files added to this is ignored 
+
+Listing a branch
+
+$ git branch
+
+
+Adding a new Branch
+
+$ git checkout -b <branch_name>
+// this command move the bash into the newly created branch "feature1" , and if we execute "$ git branch" , we should see a "*" to the left of feature1
+//  indicating that it is the current branch we are working on
+
+
+changing between branches 
+
+$ git checkout <branch_name>
+
+// $  git checkout master , to move to the "master" branch
