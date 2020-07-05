@@ -6,3 +6,6 @@ File are commited from here
 
 #Git Repository
 All our snapshots are stored
+
+Okay this is fine
+
