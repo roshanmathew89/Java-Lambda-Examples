@@ -124,4 +124,11 @@ Note: When you checkout an earlier commit, you are now in a "detached HEAD" stat
 
 
 
+Remote upload of branches to github.com 
+
+
+$ git remote add origin https://github.com/roshanmathew89/Java-Lambda-Examples.git
+$ git remote -v // to check if the origin is set correctly
+$ git push   -u origin master // master is the branch name you want to upload 
+
 
