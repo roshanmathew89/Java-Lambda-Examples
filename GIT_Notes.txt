@@ -114,9 +114,11 @@ The steps are as follows:
 5) Exit out of git log by pressing Q
 6) Type git checkout 7484e645 (replace the hash with one from your selected commit) and hit enter
 
-7) Now you can look around inside of this commit and copy any code that you need. If you'd like to start working from this commit, but don't want to overwrite any of the code from the branch that you're currently on (in this case it's master) then you can type git checkout -b <branch_name> to create a new branch to begin working from.
+7) Now you can look around inside of this commit and copy any code that you need.
+   If you'd like to start working from this commit, but don't want to overwrite any of the code from the branch that you're currently on (in this case it's master) then you can type git checkout -b <branch_name> to create a new branch to begin working from.
 
-8) Once you're done working from this commit, you can return to the most recent commit on the branch of your choosing by typing git checkout <branch_name>, in this case I typed git checkout master and it returned me to my most recent commit on the master branch.
+8) Once you're done working from this commit,
+   you can return to the most recent commit on the branch of your choosing by typing git checkout <branch_name>, in this case I typed git checkout master and it returned me to my most recent commit on the master branch.
 
 Note: When you checkout an earlier commit, you are now in a "detached HEAD" state, this means that you are no longer on the commit that is being pointed to by the HEAD. The HEAD, in git, is a pointer to the most recent commit of whichever branch you are currently on.
 
